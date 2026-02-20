@@ -106,13 +106,16 @@ body {
 }
 
 
-/* Hide/Show Modal (For Cypress) */
+/* Hide/Show Modal */
+
 
 .hide {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 .show {
-  display: block;
+  position: relative;
+  left: 0;
 }
 
