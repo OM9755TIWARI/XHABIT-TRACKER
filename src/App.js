@@ -64,14 +64,14 @@ function App() {
         + Add data
       </button>
 
-      {showForm && (
-        <HabitForm
-          addHabit={addHabit}
-          updateHabit={updateHabit}
-          editHabit={editHabit}
-          closeForm={() => setShowForm(false)}
-        />
-      )}
+      <HabitForm
+        addHabit={addHabit}
+        updateHabit={updateHabit}
+        editHabit={editHabit}
+        closeForm={() => setShowForm(false)}
+        show={showForm}
+      />
+
 
       <Charts habits={habits} />
 

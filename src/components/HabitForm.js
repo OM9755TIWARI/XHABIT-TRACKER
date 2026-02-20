@@ -5,7 +5,9 @@ function HabitForm({
   updateHabit,
   editHabit,
   closeForm,
+  show,
 }) {
+
   const [date, setDate] = useState("");
   const [desc, setDesc] = useState("");
 
@@ -46,7 +48,8 @@ function HabitForm({
   };
 
   return (
-    <div className="modal">
+   <div className={`modal ${show ? "show" : "hide"}`}>
+
       <h2>Update Today's Progress</h2>
 
       <form onSubmit={handleSubmit}>

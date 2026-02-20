@@ -50,8 +50,9 @@ function Charts({ habits }) {
       <div>
         <h2>Top Habits (Last Week)</h2>
 
-        <ResponsiveContainer width={300} height={250}>
-          <BarChart data={barData}>
+       <ResponsiveContainer width="100%" height={250}>
+        <BarChart data={barData}>
+
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
             <XAxis dataKey="date" stroke="#94a3b8" />
             <YAxis stroke="#94a3b8" />
@@ -76,8 +77,9 @@ function Charts({ habits }) {
       <div>
         <h2>Average Completions</h2>
 
-        <ResponsiveContainer width={300} height={250}>
-          <PieChart>
+        <ResponsiveContainer width="100%" height={250}>
+            <PieChart>
+
             <Pie
               data={pieData}
               dataKey="value"
